@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Run `rails t test/models/my_model_test.rb`
 
-Things you may want to cover:
+The output is:
 
-* Ruby version
+```
+ r t test/models/my_model_test.rb
+Running 1 tests in a single process (parallelization threshold is 50)
+Run options: --seed 2478
 
-* System dependencies
+# Running:
 
-* Configuration
+uninitialized constant MyModelTest::MyModel
 
-* Database creation
+          MyModel.run_something
+          ^^^^^^^
+uninitialized constant MyModelTest::MyModel
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+          MyModel.run_something
+          ^^^^^^^
+something
+```
